@@ -41,11 +41,24 @@ mysite
 |    |
 |    |   asgi.py
 |    |   wsgi.py
-|    |   settings.py
-|    |   urls.py
+|    |   settings.py -> your project's settings
+|    |   urls.py     -> pretty obvious
 |
 └───
 ```
+
+Django consists of *apps*, they make up the whole project. (probably like components in react)
+
+to create new apps(modules?)
+
+1. we run:
+  ```
+    python manage.py startapp app_name
+  ```
+
+2. then add a *urls.py* file to the newly created app
+
+3. configure the main *urls.py* to point to the new app (read the comments, theyr), and also add the app to **INSTALLED_APPS** list in **settings.py**
 
 # TBC
 
